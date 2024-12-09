@@ -1,0 +1,110 @@
+/* Geral */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.pesquisa {
+    display: flex;
+}
+
+.main {
+    padding: 20px;
+}
+
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.card-footer {
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.text-muted {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.link-serie {
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Computadores (4 cards por linha) */
+@media (min-width: 992px) {
+    .row-cols-md-4 > * {
+        flex: 0 0 auto;
+        width: calc(100% / 4);
+    }
+}
+
+/* Tablets (2 cards por linha) */
+@media (min-width: 576px) and (max-width: 991px) {
+    .row-cols-sm-2 > * {
+        flex: 0 0 auto;
+        width: calc(100% / 2);
+    }
+}
+
+/* Celulares (1 card por linha) */
+@media (max-width: 575px) {
+    .row-cols-1 > * {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

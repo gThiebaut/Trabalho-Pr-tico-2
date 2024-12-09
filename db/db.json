@@ -1,0 +1,25 @@
+{
+  "series": [
+    {
+      "id": 1,
+      "title": "Sword Art Online",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": 2,
+      "title": "Attack on Titan",
+      "description": "Assumenda laudantium odio accusamus fugiat sapiente rem nesciunt cupiditate."
+    }
+  ],
+  "author": {
+    "avatar": "./assets/img/guilherme.jpg",
+    "name": "Guilherme de Assis Thiebaut",
+    "bio": "Sou estudante de Análise e Desenvolvimento de Sistemas, sou fascinado por jogos digitais e já cheguei muito próximo de me tornar jogador profissional.",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "class": "2-2024",
+    "social": "@g_thiebaut"
+  },
+  "favoriteSeries": [
+
+  ]
+}

@@ -1,0 +1,154 @@
+/* Geral */
+
+html {
+    height: 100%;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.carrosel {
+    border: 1px solid black;
+    margin: 0 auto;
+    max-width: 35%;
+}
+
+
+
+.carousel-item img {
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilo específico para "Novas Séries" */
+#new-series-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+/* Estilos Padrão para Cards */
+.card {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card .card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card .card-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.link-serie {
+    text-decoration: none;
+}
+
+.info-aluno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.autoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    min-width: 250px;
+}
+
+.autoria img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.imgsocial {
+    text-decoration: none;
+}
+
+#favorite-series-cards .card{
+    max-width: 25%;
+}
+
+/* Media Queries */
+
+/* Computadores (5 cards por linha para "Novas Séries") */
+@media (min-width: 992px) {
+    #new-series-cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Tablets (2 cards por linha) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #new-series-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares (1 card por linha) */
+@media (max-width: 767px) {
+    #new-series-cards {
+        grid-template-columns: 1fr;
+    }
+}
